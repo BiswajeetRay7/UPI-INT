@@ -1,4 +1,3 @@
-
 # Logs
 logs
 *.log
@@ -44,6 +43,7 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+*.test.js
 
 # TypeScript cache
 *.tsbuildinfo
