@@ -1,34 +1,34 @@
 {
-  "name": "Upi-Recon",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "format": "npm run prettier:fix && npm run lint:fix"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.27.2",
-    "bluebird": "^3.7.2",
-    "chalk": "^4.1.0",
-    "enquirer": "^2.3.6",
-    "figlet": "^1.5.2",
-    "ora": "^5.4.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-unicorn": "^43.0.2",
-    "prettier": "2.7.1"
-  }
+    "name": "Upi-Recon",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint . --ext .js",
+        "lint:fix": "eslint . --ext .js --fix",
+        "prettier": "prettier --check .",
+        "prettier:fix": "prettier --write .",
+        "format": "npm run prettier:fix && npm run lint:fix"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "bluebird": "^3.7.2",
+        "chalk": "^4.1.0",
+        "enquirer": "^2.3.6",
+        "figlet": "^1.5.2",
+        "ora": "^5.4.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.21.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-unicorn": "^43.0.2",
+        "prettier": "2.7.1"
+    }
 }
