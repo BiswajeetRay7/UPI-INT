@@ -33,28 +33,38 @@ function _asyncToGenerator(fn) {
 const _require = require("axios");
 
 const axios = _require.default;
-
 const Bluebird = require("bluebird");
-
+const lolcatjs = require("lolcatjs");
+const figlet = require("figlet");
 const _require2 = require("enquirer");
 
 const { prompt } = _require2;
-
 const chalk = require("chalk");
-
 const ora = require("ora");
-
-const pkg = require("../package.json");
 
 const instance = axios.create({
     validateStatus: (status) => status >= 0 && status <= 1000,
+    timeout: 7500,
 });
 
-const banner = () => {
-    // console.log(`
-    //     ${chalk.green(`v${pkg.version}`)}
-    // `);
-};
+const banner = () => new Promise((resolve) => {
+    lolcatjs.options.seed = Math.round(Math.random() * 1000);
+    lolcatjs.options.colors = true;
+    figlet.text(
+        "UPI-INT",
+        {
+            font: "Big",
+            horizontalLayout: "fitted",
+        },
+        (err, data) => {
+            if (err) return;
+            lolcatjs.fromString(data);
+            lolcatjs.options.seed = Math.round(Math.random() * 1000); // lolcatjs.fromString("\b\b\tMade by Biswajeet7 & Devxprite\n\n\n");
+
+            resolve();
+        },
+    );
+});
 
 const input = (inputName) => new Promise((resolve) => {
     prompt({
@@ -92,17 +102,25 @@ const checkUpi = /* #__PURE__ */ (function () {
     const _ref = _asyncToGenerator(function* (upi) {
         return new Promise((resolve) => {
             const spinner = ora(`Checking ${upi}`).start();
-            instance.post(`https://upibankvalidator.com/api/upiValidation?upi=${upi}`).then((response) => {
-                const { data } = response;
+            instance
+                .post(`https://upibankvalidator.com/api/upiValidation?upi=${upi}`)
+                .then((response) => {
+                    const { data } = response;
 
-                if (data.isUpiRegistered) {
-                    spinner.succeed(`UPI ${chalk.cyanBright(upi)} is registered to ${chalk.magentaBright(data.name)}.`);
-                } else {
+                    if (data.isUpiRegistered) {
+                        spinner.succeed(
+                            `UPI ${chalk.cyanBright(upi)} is registered to ${chalk.magentaBright(data.name)}.`,
+                        );
+                    } else {
+                        spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
+                    }
+
+                    resolve();
+                })
+                .catch((error) => {
                     spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
-                }
-
-                resolve();
-            });
+                    resolve();
+                });
         });
     });
 
@@ -112,7 +130,7 @@ const checkUpi = /* #__PURE__ */ (function () {
 }());
 
 _asyncToGenerator(function* () {
-    banner();
+    yield banner();
     const inputUPI = yield input("UPI");
     const UPIs = banks.map((bank) => `${inputUPI.replace(/\s/g, "").split("@")[0]}@${bank}`);
     yield Bluebird.map(
@@ -126,5 +144,5 @@ _asyncToGenerator(function* () {
             concurrency: 1,
         },
     );
-    console.log(chalk.greenBright(`\n\nThank You! for using ${pkg.name}.`));
+    console.log(chalk.greenBright(`\n\nThank You for using ${chalk.hex("#FFA500")("UPI-INT")}.`));
 })();

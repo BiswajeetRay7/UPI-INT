@@ -1,25 +1,35 @@
 {
-    "name": "Upi-Recon",
+    "name": "UPI-INT",
     "version": "1.0.0",
     "description": "",
-    "main": "bin/app.js",
+    "main": "src/app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src/app.js",
         "lint": "eslint . --ext .js",
         "lint:fix": "eslint . --ext .js --fix",
         "prettier": "prettier --check .",
         "prettier:fix": "prettier --write .",
-        "format": "npm run prettier:fix && npm run lint:fix"
+        "format": "npm run prettier:fix && npm run lint:fix",
+        "postinstall": "node ./src/postInstall.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "upi-recon",
+        "upi"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "DevXprite",
+        "email": "devXprite@gmail.com"
+    },
     "dependencies": {
         "axios": "^0.27.2",
         "bluebird": "^3.7.2",
+        "boxen": "^5.1.2",
         "chalk": "^4.1.0",
         "enquirer": "^2.3.6",
         "figlet": "^1.5.2",
+        "lolcatjs": "^2.4.1",
         "ora": "^5.4.1"
     },
     "devDependencies": {
@@ -30,5 +40,13 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-unicorn": "^43.0.2",
         "prettier": "2.7.1"
-    }
+    },
+    "bin": {
+        "upirecon": "src/postInstall.js",
+        "upi-int": "src/postInstall.js"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "engineStrict": true
 }
