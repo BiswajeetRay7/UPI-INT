@@ -46,7 +46,7 @@ const ora = require("ora");
 
 const instance = axios.create({
     validateStatus: (status) => status >= 0 && status <= 1000,
-    timeout: 7500,
+    timeout: 3500,
 });
 
 const banner = () => new Promise((resolve) => {
