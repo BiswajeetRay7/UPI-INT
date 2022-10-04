@@ -38,7 +38,7 @@ UPI-INT is an osint tool based on upi recon for information gathering and analys
   ```
 - Open cloned directory
   ```
-  cd wayback && chmod +x wayback.sh 
+  cd UPI-INT 
   ```
 - Now run tool
   ```
