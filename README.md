@@ -50,4 +50,4 @@ OR
 npm start
 
 ## Screenshot
- <a href="https://ibb.co/tC4v1Z1"><img src="https://i.ibb.co/cT1Zsbs/Screenshot-2022-10-04-185029.png" alt="Screenshot-2022-10-04-185029" border="0"></a><br 
+ <a href="https://ibb.co/tC4v1Z1"><img src="https://i.ibb.co/cT1Zsbs/Screenshot-2022-10-04-185029.png" alt="Screenshot-2022-10-04-185029" border="0"></a>
