@@ -53,11 +53,12 @@ const banner = () => new Promise((resolve) => {
     figlet.text(
         "UPI-INT",
         {
-            font: "Big",
+            font: "Big Money-ne",
             horizontalLayout: "fitted",
         },
         (err, data) => {
             if (err) return;
+            console.log("\n");
             lolcatjs.fromString(data);
             lolcatjs.options.seed = Math.round(Math.random() * 1000); // lolcatjs.fromString("\b\b\tMade by Biswajeet7 & Devxprite\n\n\n");
 
