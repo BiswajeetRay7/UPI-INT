@@ -17,7 +17,7 @@
   
   ## ABOUT TOOL :
 
-UPI-INT is an osint based on upi recon for information gathering and analysis.
+UPI-INT is an osint tool based on upi recon for information gathering and analysis.
 
 
 ## AVAILABLE ON :
@@ -33,15 +33,15 @@ UPI-INT is an osint based on upi recon for information gathering and analysis.
 ### Installation
 
 - Clone the Repo
-  ```bash
+  ```
   git clone https://github.com/BiswajeetRay7/UPI-INT
   ```
 - Open cloned directory
-  ```bash
+  ```
   cd wayback && chmod +x wayback.sh 
   ```
 - Now run tool
-  ```bash
+  ```
   npm install 
   ```
 > Usage:
@@ -50,4 +50,4 @@ OR
 npm start
 
 ## Screenshot
-  https://ibb.co/tC4v1Z1
+ <a href="https://ibb.co/tC4v1Z1"><img src="https://i.ibb.co/cT1Zsbs/Screenshot-2022-10-04-185029.png" alt="Screenshot-2022-10-04-185029" border="0"></a><br 
