@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     try {
         var info = gen[key](arg);
@@ -60,7 +62,8 @@ const banner = () => new Promise((resolve) => {
             if (err) return;
             console.log("\n");
             lolcatjs.fromString(data);
-            lolcatjs.options.seed = Math.round(Math.random() * 1000); // lolcatjs.fromString("\b\b\tMade by Biswajeet7 & Devxprite\n\n\n");
+            lolcatjs.options.seed = Math.round(Math.random() * 1000);
+            lolcatjs.fromString("\t\tMade by DevXprite & Biswajeet7\n\n");
 
             resolve();
         },
@@ -130,7 +133,7 @@ const checkUpi = /* #__PURE__ */ (function () {
     };
 }());
 
-_asyncToGenerator(function* () {
+module.exports = _asyncToGenerator(function* () {
     yield banner();
     const inputUPI = yield input("UPI");
     const UPIs = banks.map((bank) => `${inputUPI.replace(/\s/g, "").split("@")[0]}@${bank}`);

@@ -2,10 +2,10 @@
     "name": "UPI-INT",
     "version": "1.0.0",
     "description": "",
-    "main": "src/app.js",
+    "main": "bin/app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/app.js",
+        "start": "node bin/app.js",
         "lint": "eslint . --ext .js",
         "lint:fix": "eslint . --ext .js --fix",
         "prettier": "prettier --check .",
@@ -21,6 +21,10 @@
     "author": {
         "name": "DevXprite",
         "email": "devXprite@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BiswajeetRay7/UPI-INT.git"
     },
     "dependencies": {
         "axios": "^0.27.2",
@@ -42,8 +46,9 @@
         "prettier": "2.7.1"
     },
     "bin": {
-        "upirecon": "src/postInstall.js",
-        "upi-int": "src/postInstall.js"
+        "upirecon": "bin/app.js",
+        "upi-int": "bin/app.js",
+        "upi": "bin/app.js"
     },
     "engines": {
         "node": ">=8.0.0"
