@@ -13,3 +13,39 @@
 <p align="center">
 <a href="https://ibb.co/m5ThJVb"><img src="https://i.ibb.co/MkSPnxZ/upi-int.png" alt="upi-int" border="0"></a><br 
 </p>
+
+  
+  ## ABOUT TOOL :
+
+UPI-INT is an osint based on upi recon for information gathering and analysis.
+
+
+## AVAILABLE ON :
+
+* Termux
+* Windows
+* Linux
+  
+ ### Prerequisites
+
+- Git and node
+
+### Installation
+
+- Clone the Repo
+  ```bash
+  git clone https://github.com/BiswajeetRay7/UPI-INT
+  ```
+- Open cloned directory
+  ```bash
+  cd wayback && chmod +x wayback.sh 
+  ```
+- Now run tool
+  ```bash
+  npm install 
+  ```
+> Usage:
+node . 
+OR
+npm start
+
