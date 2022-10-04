@@ -38,16 +38,16 @@ UPI-INT is an osint tool based on upi recon for information gathering and analys
   ```
 - Open cloned directory
   ```
-  cd UPI-INT 
+  cd UPI-INT
   ```
-- Now run tool
+- Install Dependencies 
   ```
   npm install 
   ```
-> Usage:
-node . 
-OR
-npm start
+- Now Run Tool
+  ```
+  npm start
+  ```
 
 ## Screenshot
  <a href="https://ibb.co/tC4v1Z1"><img src="https://i.ibb.co/cT1Zsbs/Screenshot-2022-10-04-185029.png" alt="Screenshot-2022-10-04-185029" border="0"></a>
