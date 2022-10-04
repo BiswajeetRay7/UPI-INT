@@ -17,7 +17,7 @@
   
   ## ABOUT TOOL :
 
-UPI-INT is an osint tool based on upi recon for information gathering and analysis.
+UPI-INT is an indian osint tool based on recon on upi for information gathering and analysis.
 
 
 ## AVAILABLE ON :
