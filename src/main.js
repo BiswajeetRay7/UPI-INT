@@ -63,7 +63,7 @@ const banner = () => new Promise((resolve) => {
             console.log("\n");
             lolcatjs.fromString(data);
             lolcatjs.options.seed = Math.round(Math.random() * 1000);
-            lolcatjs.fromString("\t\tMade by DevXprite & Biswajeet7\n\n");
+            lolcatjs.fromString("\t\tMade by DevXprite & BiswajeetRay7\n\n");
 
             resolve();
         },
