@@ -1,34 +1,57 @@
-<p align="center">
-<a href="#"><img  title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
-</p>
+<div id="top"></div>
+<br />
+<div align="center">
+<h2 align="center">UPI-INT</h2>
 
+  <p align="center">
+    <a href="https://github.com/BiswajeetRay7/UPI-INT/issues/new?assignees=&labels=bug&template=bug_report.md&title=">Report Bug</a>
+    ·
+    <a href="https://github.com/BiswajeetRay7/UPI-INT/issues">Request Feature</a>
+  </p>
 
-
-<p align="center">
-<a href="#"><img title="UPI-INT" src="https://img.shields.io/badge/Tool-UPI--INT-green"></a>
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.0-red"></a>
-<a href="#"><img title="Maintainence" src="https://img.shields.io/badge/Maintained-Yes-blue"></a>
-</p>
-
-<p align="center">
-<a href="https://ibb.co/m5ThJVb"><img src="https://i.ibb.co/MkSPnxZ/upi-int.png" alt="upi-int" border="0"></a><br 
-</p>
-
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/BiswajeetRay7/UPI-INT?style=flat">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/BiswajeetRay7/UPI-INT">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/BiswajeetRay7/UPI-INT">
+  <img alt="GitHub forks" src="https://img.shields.io/github/package-json/v/BiswajeetRay7/UPI-INT">
+  <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2022">
   
-  ## ABOUT TOOL :
+<br />
+<br />
 
-UPI-INT is an indian osint tool based on recon on upi for information gathering and analysis.
+</div>
 
 
-## AVAILABLE ON :
+## ABOUT TOOL :
+<div align="center">
+
+  <img alt="Preview" src="https://user-images.githubusercontent.com/80192140/194449282-ae65a8d5-4b71-42ab-b3cd-0e1d27268c83.gif">
+  <br />
+  <i>UPI-INT is an indian osint tool based on recon on upi for information gathering and analysis.</i>
+  <br />
+  
+</div>
+
+### AVAILABLE ON :
 
 * Termux
 * Windows
 * Linux
-  
- ### Prerequisites
 
-- Git and node
+## Getting Started
+
+### Prerequisites
+
+You need **NodeJs** 10 or later to run this tool. You can install NodeJs
+
+- On Linux
+  ```sh
+  sudo apt-get install nodejs
+  ```
+  > Although there is no need to install NodeJs on Kali Linux, as its packages are already present in Kali Linux.
+- On Termux
+  ```sh
+  pkg install nodejs-lts 
+  ```
 
 ### Installation
 
@@ -49,5 +72,13 @@ UPI-INT is an indian osint tool based on recon on upi for information gathering 
   npm start
   ```
 
-## Screenshot
- <a href="https://ibb.co/tC4v1Z1"><img src="https://i.ibb.co/cT1Zsbs/Screenshot-2022-10-04-185029.png" alt="Screenshot-2022-10-04-185029" border="0"></a>
+## Run with Gitpod
+
+Click this button to run your project on Gitpod which comes with pre-configured environment you need.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BiswajeetRay7/UPI-INT)
+
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
