@@ -100,6 +100,7 @@ const banks = [
     "dbs",
     "barodampay",
     "idfcbank",
+    "okbizaxis",
 ];
 
 const checkUpi = /* #__PURE__ */ (function () {
