@@ -78,7 +78,25 @@ Click this button to run your project on Gitpod which comes with pre-configured 
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BiswajeetRay7/UPI-INT)
 
+## Supporters
+
+### Stargazers:
+[![Stargazers repo roster for @devXprite/infoooze][stangers-img-url]](https://github.com/devXprite/BiswajeetRay7/UPI-INT)  
+
+### Forkers
+[![Forkers repo roster for @devXprite/infoooze][forker-img-url]](https://github.com/devXprite/infoooze/network/members)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contributors
+Thank you so much all for spending your time to improve this tool.  
+  
+[![Contributors](https://contrib.rocks/image?repo=BiswajeetRay7/UPI-INT)](https://github.com/BiswajeetRay7/UPI-INT/graphs/contributors)
 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+[stangers-img-url]: https://reporoster.com/stars/dark//BiswajeetRay7/UPI-INT
+[forker-img-url]: https://reporoster.com/forks/dark//BiswajeetRay7/UPI-INT
+
