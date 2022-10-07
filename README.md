@@ -71,12 +71,17 @@ You need **NodeJs** 10 or later to run this tool. You can install NodeJs
   ```
   npm start
   ```
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Run with Gitpod
 
 Click this button to run your project on Gitpod which comes with pre-configured environment you need.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BiswajeetRay7/UPI-INT)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Supporters
 
@@ -93,9 +98,14 @@ Thank you so much all for spending your time to improve this tool.
   
 [![Contributors](https://contrib.rocks/image?repo=BiswajeetRay7/UPI-INT)](https://github.com/BiswajeetRay7/UPI-INT/graphs/contributors)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 [stangers-img-url]: https://reporoster.com/stars/dark//BiswajeetRay7/UPI-INT
 [forker-img-url]: https://reporoster.com/forks/dark//BiswajeetRay7/UPI-INT
