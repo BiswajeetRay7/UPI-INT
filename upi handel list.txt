@@ -1,0 +1,56 @@
+1 BHIM Baroda Pay (only Android)	@BARODAMPAY
+2	BHIM RBL Pay (Android & iOS)	@rbl
+3	BHIM PayWiz ( Android )	@idbi
+4	BHIM (android & iOS)	@upi
+5	BHIM AUPay (Android & iOS)	@aubank
+6	BHIM Axis Pay (only android)	@axisbank
+7	BHIM BANDHAN UPI (Android & iOS)	@bandhan
+8	BHIM DLB UPI (Android & iOS)	@dlb
+9	BHIM IndusPay (only Android)	@indus
+10	BHIM KBL UPI (Android)	@kbl
+11	BHIM Lotza UPI (only Android)	@federal
+12	BHIM SBIPay (only android)	@sbi
+13	BHIM UCO UPI (Android and iOS both)	@uco
+14	BHIM YES PAY (only Android)	@yesbank
+15	Citi Mobile (android & iOS)	@citi & @citigold
+16	DhanSmart (Android & iOS)	@dlb
+17	DigiBank - DBS (Android & iOS)	@dbs
+18	Freecharge (Android & iOS)	@freecharge
+19	Google Pay (android & iOS)	@okhdfcbank, @okaxis , @oksbi, @okicici
+20	HSBC Simply Pay (android & iOS)	@hsbc
+21	IDBI Bank GO Mobile+ ( Android & iOS)	@idbi
+22	iMobile by ICICI Bank (android users)	@icici
+23	IndOASIS (Android and iOS both)	@indianbank, @allbank
+24	Kotak Mobile Banking App (Android)	@kotak
+25	MobiK wik ( Android & iOS)	@ikwik
+26	Nxt – Union Bank of India ( iOS and Android )	@unionbankofindia, @uboi and @unionbank
+27	Paytm (Android & IOS)	@paytm
+28	Phone-Pe (android & iOS)	@ybl
+29	SIB Mirror+ (only Android)	@sib
+
+
+          3rd Party UPI App handel
+
+
+1	Amazon Pay---	(Axis Bank	@apl)	(Yes Bank	@yapl)
+2	Bajaj Finserv---	Axis Bank	@abfspay	
+3	Bajaj MARKETS (Finserv Markets)---	Axis Bank	@abfspay	
+4	CoinTab---	Federal Bank	@fbl	
+5	CRED---	Axis Bank	@axisb	
+6	Fave (Pinelabs)---	IDFC FIRST Bank	@idfcbank	
+7	Goibibo---	ICICI bank	@icici	
+8	Google Pay---	(Axis Bank 	@okaxis)	(HDFC Bank	@okhdfcbank) (ICICI	@okicici) (State Bank of India 	@oksbi)
+9	Groww---	Axis Bank	@axisbank
+10	Jupiter Money---	Axis Bank Limited	@jupiteraxis	
+11	Make My Trip---	(ICICI	@icici) (IndusInd Bank	@indus)
+12	MobiKwik---	HDFC Bank	@ikwik	
+13	Phonepe---	(Yes Bank	@ybl) (ICICI Bank	@ibl) (Axis Bank	@axl)
+14	Samsung Pay---	Axis Bank	@pingpay	
+15	Slash---	ICICI Bank	@icici	
+16	SuperPay (Chintamoney)---	Kotak Mahindra Bank	@kmbl	
+17	TataNeu---	ICICI Bank	@tapicici
+18	Timepay---	The Cosmos Co-Operative Bank Ltd.	@timecosmos
+19	tvam (Atyati)---	Yes Bank	@yesbank
+20	Ultracash---	IDFC Bank	@idfcbank	
+21	WhatsApp---ICICI Bank	@waicici, @icici (Axis Bank	@waaxis) (HDFC Bank	@wahdfcbank) (State Bank of India	@wasbi)
+22	YuvaPay---	Yes Bank	@yesbank
