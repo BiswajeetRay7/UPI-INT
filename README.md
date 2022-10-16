@@ -53,6 +53,12 @@ You need **NodeJs** 10 or later to run this tool. You can install NodeJs
   pkg install nodejs-lts 
   ```
 
+### One-Line Installing
+
+```
+  git clone https://github.com/BiswajeetRay7/UPI-INT && cd UPI-INT && npm install && npm start
+  ```
+
 ### Installation
 
 - Clone the Repo
