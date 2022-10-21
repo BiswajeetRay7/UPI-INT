@@ -53,6 +53,12 @@ You need **NodeJs** 10 or later to run this tool. You can install NodeJs
   pkg install nodejs-lts 
   ```
 
+### One-Line Installing
+
+```
+  git clone https://github.com/BiswajeetRay7/UPI-INT && cd UPI-INT && npm install && npm start
+  ```
+
 ### Installation
 
 - Clone the Repo
@@ -79,6 +85,21 @@ You need **NodeJs** 10 or later to run this tool. You can install NodeJs
 Click this button to run your project on Gitpod which comes with pre-configured environment you need.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BiswajeetRay7/UPI-INT)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Run On Google Cloud
+
+Click this button to open Google Cloud Console.
+
+[![Open in Gitpod](https://camo.githubusercontent.com/5832b6a44b19b13a5a84f8e89d646780a5ec646a0dfeef52f001134caca93511/68747470733a2f2f6465706c6f792e636c6f75642e72756e2f627574746f6e2e737667)](https://shell.cloud.google.com/?show=terminal)
+
+Wait till Cloud Shell machine start and use One-Line Installing to run your project
+
+```
+  git clone https://github.com/BiswajeetRay7/UPI-INT && cd UPI-INT && npm install && npm start
+  ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
