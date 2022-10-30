@@ -20,8 +20,8 @@
 
 </div>
 
-
 ## ABOUT TOOL :
+
 <div align="center">
 
   <img alt="Preview" src="https://user-images.githubusercontent.com/80192140/194449282-ae65a8d5-4b71-42ab-b3cd-0e1d27268c83.gif">
@@ -33,9 +33,9 @@
 
 ### AVAILABLE ON :
 
-* Termux
-* Windows
-* Linux
+-   Termux
+-   Windows
+-   Linux
 
 ## Getting Started
 
@@ -43,42 +43,41 @@
 
 You need **NodeJs** 10 or later to run this tool. You can install NodeJs
 
-- On Linux
-  ```sh
-  sudo apt-get install nodejs
-  ```
-  > Although there is no need to install NodeJs on Kali Linux, as its packages are already present in Kali Linux.
-- On Termux
-  ```sh
-  pkg install nodejs-lts 
-  ```
+-   On Linux
+    ```sh
+    sudo apt-get install nodejs
+    ```
+    > Although there is no need to install NodeJs on Kali Linux, as its packages are already present in Kali Linux.
+-   On Termux
+    ```sh
+    pkg install nodejs-lts
+    ```
 
 ### One-Line Installing
 
 ```
   git clone https://github.com/BiswajeetRay7/UPI-INT && cd UPI-INT && npm install && npm start
-  ```
+```
 
 ### Installation
 
-- Clone the Repo
-  ```
-  git clone https://github.com/BiswajeetRay7/UPI-INT
-  ```
-- Open cloned directory
-  ```
-  cd UPI-INT
-  ```
-- Install Dependencies 
-  ```
-  npm install 
-  ```
-- Now Run Tool
-  ```
-  npm start
-  ```
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+-   Clone the Repo
+    ```
+    git clone https://github.com/BiswajeetRay7/UPI-INT
+    ```
+-   Open cloned directory
+    ```
+    cd UPI-INT
+    ```
+-   Install Dependencies
+    ```
+    npm install
+    ```
+-   Now Run Tool
+    ```
+    npm start
+    ```
+    <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Run with Gitpod
 
@@ -98,8 +97,7 @@ Wait till Cloud Shell machine start and use One-Line Installing to run your proj
 
 ```
   git clone https://github.com/BiswajeetRay7/UPI-INT && cd UPI-INT && npm install && npm start
-  ```
-
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -111,30 +109,32 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Branch 
-3. Commit your Changes 
-4. Push to the Branch 
+2. Create your Branch
+3. Commit your Changes
+4. Push to the Branch
 5. Open a Pull Request
- 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Supporters
 
 ### Stargazers:
-[![Stargazers repo roster for @devXprite/infoooze][stangers-img-url]](https://github.com/devXprite/BiswajeetRay7/UPI-INT)  
+
+[![Stargazers repo roster for @devXprite/infoooze][stangers-img-url]](https://github.com/devXprite/BiswajeetRay7/UPI-INT)
 
 ### Forkers
+
 [![Forkers repo roster for @devXprite/infoooze][forker-img-url]](https://github.com/devXprite/infoooze/network/members)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contributors
-Thank you so much all for spending your time to improve this tool.  
-  
+
+Thank you so much all for spending your time to improve this tool.
+
 [![Contributors](https://contrib.rocks/image?repo=BiswajeetRay7/UPI-INT)](https://github.com/BiswajeetRay7/UPI-INT/graphs/contributors)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 ## License
 
@@ -144,4 +144,3 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 [stangers-img-url]: https://reporoster.com/stars/dark//BiswajeetRay7/UPI-INT
 [forker-img-url]: https://reporoster.com/forks/dark//BiswajeetRay7/UPI-INT
-

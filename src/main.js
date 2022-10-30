@@ -1,48 +1,12 @@
 #!/usr/bin/env node
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-    try {
-        var info = gen[key](arg);
-        var { value } = info;
-    } catch (error) {
-        reject(error);
-        return;
-    }
-    if (info.done) {
-        resolve(value);
-    } else {
-        Promise.resolve(value).then(_next, _throw);
-    }
-}
-
-function _asyncToGenerator(fn) {
-    return function () {
-        const self = this;
-        const args = arguments;
-        return new Promise((resolve, reject) => {
-            const gen = fn.apply(self, args);
-            function _next(value) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-            }
-            function _throw(err) {
-                asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-            }
-            _next();
-        });
-    };
-}
-
-const _require = require("axios");
-
-const axios = _require.default;
+const { default: axios } = require("axios");
 const Bluebird = require("bluebird");
 const lolcatjs = require("lolcatjs");
 const figlet = require("figlet");
-const _require2 = require("enquirer");
-
-const { prompt } = _require2;
+const { prompt } = require("enquirer");
 const chalk = require("chalk");
 const ora = require("ora");
+// const pkg = require("../package.json");
 
 const instance = axios.create({
     validateStatus: (status) => status >= 0 && status <= 1000,
@@ -64,7 +28,6 @@ const banner = () => new Promise((resolve) => {
             lolcatjs.fromString(data);
             lolcatjs.options.seed = Math.round(Math.random() * 1000);
             lolcatjs.fromString("\t\tMade by DevXprite & BiswajeetRay7\n\n");
-
             resolve();
         },
     );
@@ -155,51 +118,41 @@ const banks = [
     "yesbankltd",
 ];
 
-const checkUpi = /* #__PURE__ */ (function () {
-    const _ref = _asyncToGenerator(function* (upi) {
-        return new Promise((resolve) => {
-            const spinner = ora(`Checking ${upi}`).start();
-            instance
-                .post(`https://upibankvalidator.com/api/upiValidation?upi=${upi}`)
-                .then((response) => {
-                    const { data } = response;
-
-                    if (data.isUpiRegistered) {
-                        spinner.succeed(
-                            `UPI ${chalk.cyanBright(upi)} is registered to ${chalk.magentaBright(data.name)}.`,
-                        );
-                    } else {
-                        spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
-                    }
-
-                    resolve();
-                })
-                .catch((error) => {
-                    spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
-                    resolve();
-                });
+const checkUpi = async (upi) => new Promise((resolve) => {
+    const spinner = ora(`Checking ${upi}`).start();
+    instance
+        .post(`https://upibankvalidator.com/api/upiValidation?upi=${upi}`)
+        .then((response) => {
+            const { data } = response;
+            if (data.isUpiRegistered) {
+                spinner.succeed(`UPI ${chalk.cyanBright(upi)} is registered to ${chalk.magentaBright(data.name)}.`);
+            } else {
+                spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
+            }
+            resolve();
+        })
+    // eslint-disable-next-line no-unused-vars
+        .catch((error) => {
+            spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
+            resolve();
         });
-    });
+});
 
-    return function checkUpi(_x) {
-        return Reflect.apply(_ref, this, arguments);
-    };
-}());
+(async () => {
+    await banner();
 
-module.exports = _asyncToGenerator(function* () {
-    yield banner();
-    const inputUPI = yield input("UPI");
+    const inputUPI = await input("UPI");
     const UPIs = banks.map((bank) => `${inputUPI.replace(/\s/g, "").split("@")[0]}@${bank}`);
-    yield Bluebird.map(
+
+    await Bluebird.map(
         UPIs,
         (upi) => new Promise((resolve) => {
             checkUpi(upi).then(() => {
                 resolve();
             });
         }),
-        {
-            concurrency: 1,
-        },
+        { concurrency: 1 },
     );
+
     console.log(chalk.greenBright(`\n\nThank You for using ${chalk.hex("#FFA500")("UPI-INT")}.`));
 })();
