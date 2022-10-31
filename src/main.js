@@ -140,8 +140,8 @@ const checkUpi = async (upi) => new Promise((resolve) => {
 
 (async () => {
     await banner();
-
-    const inputUPI = await input("UPI");
+    
+    const inputUPI = process.argv[2] || await input("UPI");
     const UPIs = banks.map((bank) => `${inputUPI.replace(/\s/g, "").split("@")[0]}@${bank}`);
 
     await Bluebird.map(
