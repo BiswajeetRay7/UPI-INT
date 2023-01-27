@@ -131,16 +131,16 @@ const checkUpi = async (upi) => new Promise((resolve) => {
             }
             resolve();
         })
-    // eslint-disable-next-line no-unused-vars
+        // eslint-disable-next-line no-unused-vars
         .catch((error) => {
-            spinner.fail(`UPI ${chalk.cyanBright(upi)} is not yet registered to any person or entity.`);
+            spinner.warn(`Unable to check ${upi}.`);
             resolve();
         });
 });
 
 (async () => {
     await banner();
-    
+
     const inputUPI = process.argv[2] || await input("UPI");
     const UPIs = banks.map((bank) => `${inputUPI.replace(/\s/g, "").split("@")[0]}@${bank}`);
 
