@@ -26,7 +26,7 @@
 
   <img alt="Preview" src="https://user-images.githubusercontent.com/80192140/194449282-ae65a8d5-4b71-42ab-b3cd-0e1d27268c83.gif">
   <br />
-  <i>UPI-INT is an indian osint tool based on recon on upi for information gathering and analysis.</i>
+  <i>UPI-INT (Retired Now) is an indian osint tool based on recon on upi for information gathering and analysis.</i>
   <br />
   
 </div>
